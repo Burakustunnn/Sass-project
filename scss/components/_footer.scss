@@ -31,3 +31,22 @@
         writing-mode: vertical-lr;
     }
 }
+.middle{
+    
+    height: 20vh;
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    gap: 1rem;
+    .social-icons{
+        a{
+            padding: 0.5rem;
+            @include transition(1s);
+            &:hover{
+                color:$tomato-color;
+            }
+        }
+
+}}

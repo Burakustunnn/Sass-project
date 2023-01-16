@@ -13,3 +13,35 @@ $img:"http://rss.haberler.com/partner/RssImage.aspx?img=http://turkishplayer.com
 $img2:"https://images.hdqwalls.com/download/spider-man-spiderweb-2t-1920x1080.jpg";
 
 $img3:"https://elsolnewsmedia.com/wp-content/uploads/2020/10/1601498876_582320_1601498920_noticia_normal.jpg";
+$img4:"https://blog.latam.playstation.com/tachyon/sites/3/2022/08/d030b0d130e7c11db7b1439924fcad6e271166aa.jpg";
+
+@mixin media-xsm {
+    @media screen and (min-width: 0px) {
+      @content;
+    }
+  }
+  
+  @mixin media-sm {
+    @media screen and (min-width: 576px) {
+      @content;
+    }
+  }
+  
+  @mixin media-md {
+    @media screen and (min-width: 768px) {
+      @content;
+    }
+  }
+  
+  @mixin media-lg {
+    @media screen and (min-width: 1024px) {
+      @content;
+    }
+  }
+  
+  @mixin media-xl {
+    @media screen and (min-width: 1600px) {
+      @content;
+    }
+  }
+  
