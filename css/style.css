@@ -1,3 +1,191 @@
+@import url("https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.2.1/css/all.min.css");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
 
+.horizontal, .vertical {
+  height: 10vh;
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 1rem;
+}
+.horizontal .social-icons a, .vertical .social-icons a {
+  padding: 0.5rem;
+  transition: all 1s;
+}
+.horizontal .social-icons a:hover, .vertical .social-icons a:hover {
+  color: rgb(206, 53, 26);
+}
+
+.vertical .social-icons {
+  display: flex;
+  flex-direction: column;
+  position: fixed;
+  bottom: 1rem;
+}
+.vertical .copyright {
+  position: fixed;
+  bottom: 1rem;
+  right: 3rem;
+  writing-mode: vertical-lr;
+}
+
+.nav {
+  height: 10vh;
+  padding: 1rem;
+}
+.nav__list {
+  text-align: center;
+}
+.nav__item {
+  display: inline;
+  padding: 1rem;
+}
+.nav__link {
+  font-size: 1rem;
+  text-transform: uppercase;
+  font-weight: 900;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  transition: all 1s;
+}
+.nav__link:hover {
+  color: rgb(206, 53, 26);
+}
+.nav--active {
+  color: antiquewhite;
+}
+
+.about__bgImg-container {
+  height: 50vh;
+  width: 100%;
+  background: linear-gradient(to left, rgba(206, 53, 26, 0.3), rgba(250, 235, 215, 0.2)), url("https://images.hdqwalls.com/download/spider-man-spiderweb-2t-1920x1080.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.about__bgImg-container .about__bio-image {
+  text-align: center;
+}
+.about__bgImg-container .about__bio-image h2 {
+  font-size: 3rem;
+  color: rgb(206, 53, 26);
+}
+.about__bgImg-container .about__bio-image p {
+  font-size: 1.2rem;
+  margin: 2rem;
+  line-height: 1.5rem;
+}
+
+.about__container {
+  width: 70vw;
+  margin: 2rem auto;
+}
+.about .about__job {
+  margin: 1rem;
+  background-color: #585858;
+  border-bottom: 3px solid rgb(206, 53, 26);
+}
+.about .about__job h2, .about .about__job h3 {
+  margin: 0.5rem 0;
+}
+.about .about__job h6 {
+  margin: 0.3rem 0;
+}
+
+.home__bgImg-container {
+  height: 100vh;
+  width: 100%;
+  background: linear-gradient(to left, rgba(206, 53, 26, 0.3), rgba(250, 235, 215, 0.2)), url("http://rss.haberler.com/partner/RssImage.aspx?img=http://turkishplayer.com/wp-content/uploads/2015/09/spider-turkishplayer.jpeg&width=600&quality=100");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+}
+
+.main {
+  display: flex;
+  height: 80vh;
+  flex-direction: column;
+  justify-content: center;
+  text-align: center;
+}
+.main__name {
+  font-size: 5rem;
+  line-height: 5rem;
+  border-bottom: 2px solid antiquewhite;
+}
+.main__name-span {
+  color: rgb(206, 53, 26);
+}
+
+.project__bgImg-container {
+  height: 40vh;
+  width: 100%;
+  background: linear-gradient(to left, rgba(206, 53, 26, 0.3), rgba(250, 235, 215, 0.2)), url("https://elsolnewsmedia.com/wp-content/uploads/2020/10/1601498876_582320_1601498920_noticia_normal.jpg");
+  background-position: center center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+}
+.project__bgImg-container .projects__bio-image {
+  text-align: center;
+  margin-bottom: 0.5rem;
+}
+
+.projects__items {
+  width: 100%;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  padding: 2rem 5rem;
+  gap: 1rem 0;
+}
+.projects__item {
+  width: 100%;
+  cursor: pointer;
+  border-bottom: 2px solid rgb(206, 53, 26);
+  position: relative;
+}
+.projects__item img {
+  width: 100%;
+}
+.projects__item::after {
+  content: "";
+  width: 100%;
+  height: 100%;
+  background-color: rgb(206, 53, 26);
+  position: absolute;
+  left: 0;
+  opacity: 0;
+  transition: all 1s;
+}
+.projects__item:hover::after {
+  opacity: 0.3;
+}
+
+body {
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+  line-height: 2.2rem;
+  color: antiquewhite;
+  height: 100vh;
+  background-color: rgb(62, 62, 62);
+}
+
+a {
+  text-decoration: none;
+  color: antiquewhite;
+}
+
+h3, h2, h1 {
+  font-weight: 900;
+  color: antiquewhite;
+}
 
 /*# sourceMappingURL=style.css.map */
