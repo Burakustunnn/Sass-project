@@ -1,0 +1,29 @@
+.nav {
+  height: 10vh;
+  padding: 1rem;
+
+  &__list {
+    text-align: center;
+  }
+  &__item {
+    display: inline;
+    padding: 1rem;
+  }
+
+  &__link {
+    font-size: 1rem;
+    text-transform: uppercase;
+    font-weight: 900;
+    font-family: $font-fam;
+    @include transition(1s);
+    &:hover{
+        color:$tomato-color;
+    } 
+
+   
+  }
+
+  &--active {
+    color: $white-color;
+  }
+}

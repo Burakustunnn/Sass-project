@@ -1,0 +1,19 @@
+.home__bgImg-container{
+@include bcgImg(100vh,$img)
+}
+.main{
+    display: flex;
+    height: 80vh;
+    flex-direction: column;
+    justify-content: center;
+    text-align: center;
+    &__name{
+        font-size: 5rem;
+        line-height: 5rem;
+        border-bottom:2px solid $white-color ;
+        &-span{
+            color: $tomato-color;
+        }
+
+    }
+}

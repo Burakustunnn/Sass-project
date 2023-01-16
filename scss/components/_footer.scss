@@ -1,0 +1,33 @@
+.horizontal{
+    height: 10vh;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    padding: 1rem;
+    .social-icons{
+        a{
+            padding: 0.5rem;
+            @include transition(1s);
+            &:hover{
+                color:$tomato-color;
+            }
+        }
+    }
+}
+.vertical{
+    @extend .horizontal;
+    .social-icons{
+        display: flex;
+        flex-direction: column;
+        position: fixed;
+        bottom: 1rem;
+
+    }
+    .copyright{
+        position:fixed ;
+        bottom:1rem ;
+        right: 3rem;
+        // transform: rotate(90deg) translate(-3rem,-5rem);
+        writing-mode: vertical-lr;
+    }
+}
